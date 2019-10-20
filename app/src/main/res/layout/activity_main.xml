@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:padding="10dp"
+        android:text="Capture Image"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:id="@+id/capture_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/preview_image"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/capture_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:text="Share Image"
+        android:layout_below="@id/preview_image"
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
